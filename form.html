@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html#quienes" class="hyperlink">Quiénes Somos</a>
+            <a href="index.html#porque" class="hyperlink">¿Por qué elegirnos?</a>
+            <a href="index.html#propuesta" class="hyperlink">Propuesta Educativa</a>
+            <a href="index.html#noticias" class="hyperlink">Últimas Noticias</a>
+            <a href="form.html" class="hyperlink">Inscribite acá</a>
+            <a href="index.html#contacto" class="hyperlink">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="formulario-container">
+        <form class="formulario" action="https://formsubmit.co/santaigou@gmail.com" method="post">
+            <h2>Completá tus datos :)</h2>
+            <label class="fullname" for="fullname">Nombre Completo</label>
+            <input type="text" id="fullname" name="fullname" required maxlength="200" minlength="2"
+            placeholder="Nombre y Apellido">
+
+            <label for="dob">Fecha de Nacimiento</label>
+            <input type="date" id="dob" name="dob">
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required title="utiliza @">
+
+            <label for="msg">Su mensaje</label>
+            <textarea name="msg" id="msg" cols="30" rows="10" required></textarea>
+            <div>
+            <input class="buttons" type="submit" value="enviar">
+            <input class="buttons" type="reset" value="reset">
+        </div>
+        </form>
+      </section>
+</body>
+</html>
